@@ -452,6 +452,15 @@ This project uses the [Fake Store API](https://fakestoreapi.com/):
 
 ---
 
+## 📝 Credentials To login:
+```
+User Id: mor_2314
+Password: 83r5^_
+```
+
 ## 📝 License
 
 This project is for educational purposes — understanding Clean Architecture in Flutter.# clean_arc_flutter
+
+
+

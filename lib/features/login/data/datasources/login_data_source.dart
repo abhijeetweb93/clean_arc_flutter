@@ -17,9 +17,9 @@ class LoginDataSourceImpl implements LoginDataSource{
   @override
   Future<Either<Exception,UserModel>> login({required String email, required String password}) async{
     try{
-      final response = await apiClient.dio.post(ApiEndpoints.login, data: {"username": "mor_2314", "password": '83r5^_'},);
+      final response = await apiClient.dio.post(ApiEndpoints.login, data: {"username": email, "password": password},);
       // final result = SignupResponseModel.fromJson(response.data);
-      return Right(UserModel(id: "1", name: "name", email: "email"));
+      return Right(UserModel(id: "1", name: "name", email: email));
     }
     on DioException catch(exception){
       return Left(Exception(exception.response?.data.toString()));
