@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: flutter_android
+    runs-on: flutter-runner
 #    runs-on: ubuntu-latest
 
     steps:
